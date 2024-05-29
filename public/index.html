@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">-------------Chat App-----------</h1>
+    <input id="username-input" type="text" placeholder="Enter your username">
+    <input id="email-input" type="email" placeholder="Enter your email">
+    <button id="connect-button">Connect to Chat</button>
+    <ul class="usersList" id="usersList">
+
+    </ul>
+    <main>
+        <div class="name">
+            <span><i class="fa-solid fa-user"></i></span>
+            <input type="text" id="name-input" class="name-input" value="John">
+        </div>
+
+        <ul class="message-container" id="message-container">
+            <li class="message-left">
+                <p class="message">
+                    Lorem ipsum dolor sit amet.
+                    <span>bluebid 26 July 2025</span>
+                </p>
+            </li>
+            <li class="message-right">
+                <p class="message">
+                    Lorem ipsum dolor sit amet.
+                    <span>bluebid 26 July 2025</span>
+                </p>
+            </li>
+
+            <li class="mesage-feedback" id="mesage-feedback">
+
+                <p class="feedback" id="feedback">Killer is typing...</p>
+            </li>
+
+        </ul>
+      
+        <form class="message-form" id="message-form">
+            <input type="text" name="message" id="message-input" class="message-input">
+        
+            <div class="v-divider"></div>
+            <button class="send-button">Send  <span><i class="fa fa-paper-plane"></i></span></button>
+        </form>
+
+    
+    </main>
+    <h3 class="clients-total" id="clients-total">Total Clients:3</h3>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js" integrity="sha512-hUhvpC5f8cgc04OZb55j0KNGh4eh7dLxd/dPSJ5VyzqDWxsayYbojWyl5Tkcgrmb/RVKCRJI1jNlRbVP4WWC4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="main.js"></script>
+</body>
+</html>
